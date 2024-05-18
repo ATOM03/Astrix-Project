@@ -22,7 +22,9 @@ export default function Home() {
             <div className="opacity-10 text-9xl font-extrabold ">NTS</div>
           </div>
         </div>
-        <AnimatedTabs />
+        <div className="mt-14">
+          <AnimatedTabs />
+        </div>
       </div>
     </main>
   );

@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -8,9 +9,10 @@ let tabs = [
 
 export default function AnimatedTabs() {
   let [activeTab, setActiveTab] = useState(tabs[0].id);
+  console.log(activeTab);
 
   return (
-    <div className="flex space-x-1">
+    <div className="flex space-x-1 ml-16">
       {tabs.map((tab) => (
         <button
           key={tab.id}
