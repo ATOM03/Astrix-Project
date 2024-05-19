@@ -6,6 +6,7 @@ import { useState } from "react";
 import AnimatedTabs from "./components/Tabs/page";
 import DemoCarousel from "./components/Carousel/page";
 import Carousel from "./components/Carousel/page";
+import SwiperDemo from "./components/Swiper/page";
 
 export default function Home() {
   const [active, setActive] = useState("tab1");
@@ -38,7 +39,8 @@ export default function Home() {
         <Header />
         <div>
           <div>
-            <Carousel images={countries} />
+            {/* <Carousel images={countries} /> */}
+            <SwiperDemo />
           </div>
 
           <div className="flex flex-col  justify-center ml-16">
