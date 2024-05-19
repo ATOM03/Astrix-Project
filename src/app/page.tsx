@@ -19,6 +19,14 @@ export default function Home() {
       image: "/china.jpg",
       title: "China",
     },
+    {
+      image: "/brazil.jpg",
+      title: "Brazil",
+    },
+    {
+      image: "/china.jpg",
+      title: "China",
+    },
     // {
     //   image: "/images/france.jpg",
     //   title: "France",
@@ -38,9 +46,9 @@ export default function Home() {
       <div>
         <Header />
         <div>
-          <div>
+          <div className="relative">
             {/* <Carousel images={countries} /> */}
-            <SwiperDemo />
+            <SwiperDemo images={countries} />
           </div>
 
           <div className="flex flex-col  justify-center ml-16">
