@@ -42,30 +42,33 @@ export default function Home() {
   ];
 
   return (
-    <main className="w-screen h-screen">
+    <main className="w-screen h-screen flex">
       <div className="w-3/5">
-        <Header />
         <div>
-          <div className="relative">
-            {/* <Carousel images={countries} /> */}
-            <SwiperDemo images={countries} />
-          </div>
+          <Header />
+          <div>
+            <div className="relative">
+              {/* <Carousel images={countries} /> */}
+              <SwiperDemo images={countries} />
+            </div>
 
-          <div className="flex flex-col  justify-center ml-16">
-            <div className="mt-24">
-              <div className="opacity-20 text-9xl font-extrabold ">ASTR </div>
-              <div className="opacity-10 text-9xl font-extrabold ">IX</div>
-              <div className="mt-32 opacity-20 text-9xl font-extrabold ">
-                EVE{" "}
+            <div className="flex flex-col  justify-center ml-16">
+              <div className="mt-24">
+                <div className="opacity-20 text-9xl font-extrabold ">ASTR </div>
+                <div className="opacity-10 text-9xl font-extrabold ">IX</div>
+                <div className="mt-32 opacity-20 text-9xl font-extrabold ">
+                  EVE{" "}
+                </div>
+                <div className="opacity-10 text-9xl font-extrabold ">NTS</div>
               </div>
-              <div className="opacity-10 text-9xl font-extrabold ">NTS</div>
             </div>
           </div>
-        </div>
-        <div className="mt-14">
-          <AnimatedTabs />
+          <div className="mt-14">
+            <AnimatedTabs />
+          </div>
         </div>
       </div>
+      <div className="flex justify-center items-center w-2/5">Event</div>
     </main>
   );
 }
