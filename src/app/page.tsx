@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <main className="w-screen h-screen">
-      <div>
+      <div className="w-3/5">
         <Header />
         <div>
           <div className="relative">
