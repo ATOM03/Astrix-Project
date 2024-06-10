@@ -68,7 +68,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center w-2/5">Event</div>
+      <div className="flex justify-center items-center w-2/5">
+        Event Collection
+      </div>
     </main>
   );
 }
