@@ -7,6 +7,7 @@ import AnimatedTabs from "./components/Tabs/page";
 import DemoCarousel from "./components/Carousel/page";
 import Carousel from "./components/Carousel/page";
 import SwiperDemo from "./components/Swiper/page";
+import EventDetails from "./components/EventDeatils/page";
 
 export default function Home() {
   const [active, setActive] = useState("tab1");
@@ -69,7 +70,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center w-2/5">
-        Event Collection
+        <EventDetails />
       </div>
     </main>
   );

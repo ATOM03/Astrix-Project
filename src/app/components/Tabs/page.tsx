@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { EventState } from "../State/atoms/EventState";
 
 let tabs = [
   { id: "Events", label: "Events" },
@@ -8,7 +10,7 @@ let tabs = [
 ];
 
 export default function AnimatedTabs() {
-  let [activeTab, setActiveTab] = useState(tabs[0].id);
+  let [activeTab, setActiveTab] = useRecoilState(EventState);
   console.log(activeTab);
 
   return (
